@@ -10,7 +10,7 @@ namespace AutoVentas.Models
     {
         public Provincia()
         {
-            VEHICULOS = new HashSet<Vehiculo>();
+            Vehiculos = new HashSet<Vehiculo>();
         }
 
         [Key]
@@ -20,6 +20,6 @@ namespace AutoVentas.Models
         [StringLength(50)]
         public string Nombre { get; set; }
 
-        public virtual ICollection<Vehiculo> VEHICULOS { get; set; }
+        public virtual ICollection<Vehiculo> Vehiculos { get; set; }
     }
 }

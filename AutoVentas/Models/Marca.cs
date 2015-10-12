@@ -10,7 +10,7 @@ namespace AutoVentas.Models
     {
         public Marca()
         {
-            MODELOS = new HashSet<Modelo>();
+            Modelos = new HashSet<Modelo>();
         }
 
         [Key]
@@ -20,6 +20,6 @@ namespace AutoVentas.Models
         [StringLength(50)]
         public string Nombre { get; set; }
 
-        public virtual ICollection<Modelo> MODELOS { get; set; }
+        public virtual ICollection<Modelo> Modelos { get; set; }
     }
 }

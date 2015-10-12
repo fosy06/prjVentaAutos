@@ -10,7 +10,7 @@ namespace AutoVentas.Models
     {
         public Vehiculo()
         {
-            EQUIPAMIENTOS = new HashSet<Equipamientos>();
+            Equipamientos = new HashSet<Equipamiento>();
         }
 
         [Key]
@@ -61,22 +61,22 @@ namespace AutoVentas.Models
 
         public DateTime? Fecha_Expiracion { get; set; }
 
-        public virtual Color COLORES { get; set; }
+        public virtual Color Colores { get; set; }
 
-        public virtual Combustible COMBUSTIBLES { get; set; }
+        public virtual Combustible Combustibles { get; set; }
 
-        public virtual Estilo ESTILOS { get; set; }
+        public virtual Estilo Estilos { get; set; }
 
-        public virtual Modelo MODELOS { get; set; }
+        public virtual Modelo Modelos { get; set; }
 
-        public virtual Moneda MONEDAS { get; set; }
+        public virtual Moneda Monedas { get; set; }
 
-        public virtual Provincia PROVINCIAS { get; set; }
+        public virtual Provincia Provincias { get; set; }
 
-        public virtual Transmision TRANSMISIONES { get; set; }
+        public virtual Transmision Transmisiones { get; set; }
 
-        public virtual Usuario USUARIOS { get; set; }
+        public virtual Usuario Usuarios { get; set; }
 
-        public virtual ICollection<Equipamientos> EQUIPAMIENTOS { get; set; }
+        public virtual ICollection<Equipamiento> Equipamientos { get; set; }
     }
 }

@@ -12,18 +12,18 @@ namespace AutoVentas.Models
         {
         }
 
-        public virtual DbSet<Color> COLORES { get; set; }
-        public virtual DbSet<Combustible> COMBUSTIBLES { get; set; }
-        public virtual DbSet<Equipamientos> EQUIPAMIENTOS { get; set; }
-        public virtual DbSet<Estilo> ESTILOS { get; set; }
-        public virtual DbSet<Marca> MARCAS { get; set; }
-        public virtual DbSet<Modelo> MODELOS { get; set; }
-        public virtual DbSet<Moneda> MONEDAS { get; set; }
-        public virtual DbSet<Provincia> PROVINCIAS { get; set; }
-        public virtual DbSet<Tipo_Cuenta> TIPOS_CUENTAS { get; set; }
-        public virtual DbSet<Transmision> TRANSMISIONES { get; set; }
-        public virtual DbSet<Usuario> USUARIOS { get; set; }
-        public virtual DbSet<Vehiculo> VEHICULOS { get; set; }
+        public virtual DbSet<Color> Colores { get; set; }
+        public virtual DbSet<Combustible> Combustibles { get; set; }
+        public virtual DbSet<Equipamiento> Equipamientos { get; set; }
+        public virtual DbSet<Estilo> Estilos { get; set; }
+        public virtual DbSet<Marca> Marcas { get; set; }
+        public virtual DbSet<Modelo> Modelos { get; set; }
+        public virtual DbSet<Moneda> Monedas { get; set; }
+        public virtual DbSet<Provincia> Provincias { get; set; }
+        public virtual DbSet<Tipo_Cuenta> Tipos_Cuentas { get; set; }
+        public virtual DbSet<Transmision> Transmisiones { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set; }
+        public virtual DbSet<Vehiculo> Vehiculos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -36,8 +36,8 @@ namespace AutoVentas.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Color>()
-                .HasMany(e => e.VEHICULOS)
-                .WithRequired(e => e.COLORES)
+                .HasMany(e => e.Vehiculos)
+                .WithRequired(e => e.Colores)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Combustible>()
@@ -45,21 +45,21 @@ namespace AutoVentas.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Combustible>()
-                .HasMany(e => e.VEHICULOS)
-                .WithRequired(e => e.COMBUSTIBLES)
+                .HasMany(e => e.Vehiculos)
+                .WithRequired(e => e.Combustibles)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Equipamientos>()
+            modelBuilder.Entity<Equipamiento>()
                 .Property(e => e.Nombre)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Equipamientos>()
+            modelBuilder.Entity<Equipamiento>()
                 .Property(e => e.Descripcion)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Equipamientos>()
-                .HasMany(e => e.VEHICULOS)
-                .WithMany(e => e.EQUIPAMIENTOS)
+            modelBuilder.Entity<Equipamiento>()
+                .HasMany(e => e.Vehiculos)
+                .WithMany(e => e.Equipamientos)
                 .Map(m => m.ToTable("VEHICULOS_EQUIPAMIENTOS").MapLeftKey("Codigo_Equipamiento").MapRightKey("Codigo_Vehiculo"));
 
             modelBuilder.Entity<Estilo>()
@@ -67,8 +67,8 @@ namespace AutoVentas.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Estilo>()
-                .HasMany(e => e.VEHICULOS)
-                .WithRequired(e => e.ESTILOS)
+                .HasMany(e => e.Vehiculos)
+                .WithRequired(e => e.Estilos)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Marca>()
@@ -76,8 +76,8 @@ namespace AutoVentas.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Marca>()
-                .HasMany(e => e.MODELOS)
-                .WithRequired(e => e.MARCAS)
+                .HasMany(e => e.Modelos)
+                .WithRequired(e => e.Marcas)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Modelo>()
@@ -85,8 +85,8 @@ namespace AutoVentas.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Modelo>()
-                .HasMany(e => e.VEHICULOS)
-                .WithRequired(e => e.MODELOS)
+                .HasMany(e => e.Vehiculos)
+                .WithRequired(e => e.Modelos)
                 .HasForeignKey(e => new { e.Codigo_Marca, e.Codigo_Modelo })
                 .WillCascadeOnDelete(false);
 
@@ -95,8 +95,8 @@ namespace AutoVentas.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Moneda>()
-                .HasMany(e => e.VEHICULOS)
-                .WithRequired(e => e.MONEDAS)
+                .HasMany(e => e.Vehiculos)
+                .WithRequired(e => e.Monedas)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Provincia>()
@@ -104,8 +104,8 @@ namespace AutoVentas.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Provincia>()
-                .HasMany(e => e.VEHICULOS)
-                .WithRequired(e => e.PROVINCIAS)
+                .HasMany(e => e.Vehiculos)
+                .WithRequired(e => e.Provincias)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Tipo_Cuenta>()
@@ -113,8 +113,8 @@ namespace AutoVentas.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Tipo_Cuenta>()
-                .HasMany(e => e.USUARIOS)
-                .WithRequired(e => e.TIPOS_CUENTAS)
+                .HasMany(e => e.Usuarios)
+                .WithRequired(e => e.Tipos_Cuentas)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Transmision>()
@@ -126,8 +126,8 @@ namespace AutoVentas.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Transmision>()
-                .HasMany(e => e.VEHICULOS)
-                .WithRequired(e => e.TRANSMISIONES)
+                .HasMany(e => e.Vehiculos)
+                .WithRequired(e => e.Transmisiones)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Usuario>()
@@ -159,8 +159,8 @@ namespace AutoVentas.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Usuario>()
-                .HasMany(e => e.VEHICULOS)
-                .WithRequired(e => e.USUARIOS)
+                .HasMany(e => e.Vehiculos)
+                .WithRequired(e => e.Usuarios)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Vehiculo>()

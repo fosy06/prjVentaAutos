@@ -6,11 +6,11 @@ namespace AutoVentas.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Equipamientos
+    public partial class Equipamiento
     {
-        public Equipamientos()
+        public Equipamiento()
         {
-            VEHICULOS = new HashSet<Vehiculo>();
+            Vehiculos = new HashSet<Vehiculo>();
         }
 
         [Key]
@@ -25,6 +25,6 @@ namespace AutoVentas.Models
 
         public byte Tipo_Categoria { get; set; }
 
-        public virtual ICollection<Vehiculo> VEHICULOS { get; set; }
+        public virtual ICollection<Vehiculo> Vehiculos { get; set; }
     }
 }

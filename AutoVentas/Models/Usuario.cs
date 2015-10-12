@@ -10,7 +10,7 @@ namespace AutoVentas.Models
     {
         public Usuario()
         {
-            VEHICULOS = new HashSet<Vehiculo>();
+            Vehiculos = new HashSet<Vehiculo>();
         }
 
         [Key]
@@ -48,8 +48,8 @@ namespace AutoVentas.Models
 
         public DateTime Fecha_Registro { get; set; }
 
-        public virtual Tipo_Cuenta TIPOS_CUENTAS { get; set; }
+        public virtual Tipo_Cuenta Tipos_Cuentas { get; set; }
 
-        public virtual ICollection<Vehiculo> VEHICULOS { get; set; }
+        public virtual ICollection<Vehiculo> Vehiculos { get; set; }
     }
 }

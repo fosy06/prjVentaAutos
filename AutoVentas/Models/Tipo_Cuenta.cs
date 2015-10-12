@@ -10,7 +10,7 @@ namespace AutoVentas.Models
     {
         public Tipo_Cuenta()
         {
-            USUARIOS = new HashSet<Usuario>();
+            Usuarios = new HashSet<Usuario>();
         }
 
         [Key]
@@ -35,6 +35,6 @@ namespace AutoVentas.Models
         [Column(TypeName = "numeric")]
         public decimal Costo_Cuenta { get; set; }
 
-        public virtual ICollection<Usuario> USUARIOS { get; set; }
+        public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace AutoVentas.Models
     {
         public Transmision()
         {
-            VEHICULOS = new HashSet<Vehiculo>();
+            Vehiculos = new HashSet<Vehiculo>();
         }
 
         [Key]
@@ -24,6 +24,6 @@ namespace AutoVentas.Models
         [StringLength(250)]
         public string Descripcion { get; set; }
 
-        public virtual ICollection<Vehiculo> VEHICULOS { get; set; }
+        public virtual ICollection<Vehiculo> Vehiculos { get; set; }
     }
 }

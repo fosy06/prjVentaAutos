@@ -10,7 +10,7 @@ namespace AutoVentas.Models
     {
         public Color()
         {
-            VEHICULOS = new HashSet<Vehiculo>();
+            Vehiculos = new HashSet<Vehiculo>();
         }
 
         [Key]
@@ -24,6 +24,6 @@ namespace AutoVentas.Models
         [StringLength(10)]
         public string Codigo_Html { get; set; }
 
-        public virtual ICollection<Vehiculo> VEHICULOS { get; set; }
+        public virtual ICollection<Vehiculo> Vehiculos { get; set; }
     }
 }

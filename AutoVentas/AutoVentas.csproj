@@ -126,7 +126,7 @@
     <Compile Include="Models\AutoVentasContext.cs" />
     <Compile Include="Models\Color.cs" />
     <Compile Include="Models\Combustible.cs" />
-    <Compile Include="Models\Equipamientos.cs" />
+    <Compile Include="Models\Equipamiento.cs" />
     <Compile Include="Models\Estilo.cs" />
     <Compile Include="Models\Marca.cs" />
     <Compile Include="Models\Modelo.cs" />

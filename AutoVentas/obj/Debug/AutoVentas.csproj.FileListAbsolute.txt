@@ -27,3 +27,32 @@ c:\users\303690515\documents\visual studio 2013\AutoVenta\AutoVentas\AutoVentas\
 c:\users\303690515\documents\visual studio 2013\AutoVenta\AutoVentas\AutoVentas\bin\EntityFramework.SqlServer.dll
 c:\users\303690515\documents\visual studio 2013\AutoVenta\AutoVentas\AutoVentas\bin\EntityFramework.xml
 c:\users\303690515\documents\visual studio 2013\AutoVenta\AutoVentas\AutoVentas\bin\EntityFramework.SqlServer.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\AutoVentas.dll.config
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\AutoVentas.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\AutoVentas.pdb
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\Antlr3.Runtime.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\EntityFramework.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\EntityFramework.SqlServer.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\Microsoft.Web.Infrastructure.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\Newtonsoft.Json.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.Helpers.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.Mvc.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.Optimization.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.Razor.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.WebPages.Deployment.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.WebPages.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.WebPages.Razor.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\WebGrease.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\EntityFramework.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\EntityFramework.SqlServer.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.Helpers.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.Mvc.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.Optimization.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.Razor.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.WebPages.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.WebPages.Deployment.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\System.Web.WebPages.Razor.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\Antlr3.Runtime.pdb
+E:\VentaAutos\prjVentaAutos\AutoVentas\bin\Newtonsoft.Json.xml
+E:\VentaAutos\prjVentaAutos\AutoVentas\obj\Debug\AutoVentas.dll
+E:\VentaAutos\prjVentaAutos\AutoVentas\obj\Debug\AutoVentas.pdb
