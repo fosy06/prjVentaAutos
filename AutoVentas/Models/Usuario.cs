@@ -16,8 +16,9 @@ namespace AutoVentas.Models
         [Key]
         public long Codigo_Usuario { get; set; }
 
-        [Required]
+        [Required(ErrorMessage="Por favor digite su nombre.")]
         [StringLength(250)]
+        [Display(Name="Nombre")]   
         public string Nombre { get; set; }
 
         public byte Tipo_Usuario { get; set; }
