@@ -13,18 +13,32 @@
                 <img src="@Url.Content("~/Content/Images/logo-small.png")" alt="Logo-Small" />
             </div>
             <div class="main-content">
-                <table border="1" class="table-content">
+                <div class="menu-site">
+                    <ul class="">
+                        <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Usados", "About", "Home")</li>
+                        <li>@Html.ActionLink("Distribuidores", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Registrarse", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Contáctenos", "Contact", "Home")</li>
+                    </ul>
+                </div>
+                <table class="table-content">
                     <tr>
-                        <td>Publicidad</td>
-                        <td>Contenido</td>
-                        <td>Publicidad</td>
+                        <td class="left-panel-ad">
+                            
+                        </td>
+                        <td>
+                            @RenderBody()
+                        </td>
+                        <td>
+                            
+                        </td>
                     </tr>
                 </table>
-                @RenderBody()
             </div>
             <div class="footer-content">
                 <footer>
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                    <p>&copy; @DateTime.Now.Year - Pelonchito's Design</p>
                 </footer>
             </div>
         </div>

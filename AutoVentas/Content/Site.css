@@ -1,11 +1,8 @@
-﻿body {
-    background-color: #FBFBFB;
-}
-
-html,
+﻿html,
 body {
     height: 100%;
     min-width: 1024px;
+    background-color: white;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -30,7 +27,7 @@ textarea {
 
 .all-body {
     height: 100%;
-    background-color: #FBFBFB;
+    background-color: white;
 }
 
 .head-page {
@@ -42,22 +39,96 @@ textarea {
 
 .main-content {
     width: 100%;
-    min-height: 100%;
     padding-bottom: 50px;
     text-align: center;
 }
 
-.main-content .table-content {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    .main-content .table-content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 400px;
+    }
+
+        .main-content .table-content tr td:nth-child(odd) {
+            /*Diseno Publicidad*/
+            width: 130px;
+        }
+
+        .main-content .table-content tr td:nth-child(even) {
+            background-color: white;
+            border: solid 1px #D8D1D1;
+        }
+
+.menu-site {
+    width: 100%;
+    height: 30px;
+    border-top: solid 2px #61A066;
 }
 
-.main-content .table-content tr td:nth-child(odd){
-    /*Diseno Publicidad*/
-    width: 15%;
+    .menu-site ul {
+        padding: 0;
+        display: inline;
+    }
+
+        .menu-site ul li {
+            display: inline;
+            padding: 4px 5px 6px 5px;
+            margin-left: -2px;
+            margin-right: -2px;
+            transition: background .50s ease-in-out;
+            -moz-transition: background .50s ease-in-out;
+            -webkit-transition: background .50s ease-in-out;
+        }
+
+            .menu-site ul li:hover {
+                background-color: #C3C1C1;
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+                .menu-site ul li:hover a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+    .menu-site a {
+        color: #323232;
+        text-decoration: none;
+    }
+
+.left-panel-ad {
+    transition: display .50s ease-in-out;
+    -moz-transition: display .50s ease-in-out;
+    -webkit-transition: display .50s ease-in-out;
 }
-.main-content .table-content tr td:nth-child(even){
-    width: 55%;
+
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+    .menu-site ul {
+        position: absolute;
+        left: 30%;
+    }
 }
-/*Holaaaaa ocupo probar*/
+
+@media screen and (max-width: 699px) and (min-width: 500px) {
+    .menu-site ul {
+        position: absolute;
+        left: 20%;
+    }
+
+    .left-panel-ad {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 499px) and (min-width: 0) {
+    .menu-site ul {
+        position: absolute;
+        left: 0;
+    }
+
+    .left-panel-ad {
+        display: none;
+    }
+}
